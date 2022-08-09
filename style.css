@@ -1,0 +1,47 @@
+body{margin:0px}
+
+nav{
+    display: flex;
+}
+
+nav>.logo{
+    background-color: azure;
+}
+
+nav>.menu{
+    flex:auto;
+    background-color:orange;    
+}
+
+nav>.user{
+background-color: aquamarine;
+
+}
+
+
+/*樣式設定 */
+main{ /*容器*/
+    display: flex; flex-wrap: wrap;
+    justify-content:center;
+    /* align-items:center; */
+    background-color: aqua;
+}
+
+main>.test{ /*項目*/
+    flex: none;
+    width: 500px;margin: 10px;
+    background-color: blueviolet;
+    
+}
+
+@media (max-width:1200px) { 
+    main>.test{
+        width: 40%;
+    }
+}
+
+@media (max-width: 500px) { 
+    main>.test{
+        width: 40%;
+    }
+}
